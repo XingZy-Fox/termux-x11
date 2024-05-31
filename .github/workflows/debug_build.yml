@@ -1,7 +1,9 @@
 name: Build
-
- jobs:
-   build:
+on: 
+     workflow_dispatch:
+permissions: write-all
+jobs:
+  build:
     name: "Build"
     runs-on: ubuntu-latest
     steps:
